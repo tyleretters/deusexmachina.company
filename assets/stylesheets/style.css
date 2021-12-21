@@ -1,5 +1,297 @@
-.active {
-  font-weight: 800;
+/**
+ * * VARIABLES
+ * * VARIABLES
+ * * VARIABLES
+ * * VARIABLES
+ * * VARIABLES
+ * */
+/**
+ * * TYPOGRAPHY
+ * * TYPOGRAPHY
+ * * TYPOGRAPHY
+ * * TYPOGRAPHY
+ * * TYPOGRAPHY
+ * */
+.type-abstract, .monospace, article pre,
+article code, .sans-serif, body, .serif, .romans, article h1 {
+  text-rendering: optimizeLegibility;
+}
+
+.serif, .romans, article h1 {
+  font-family: "Times New Roman", serif;
+}
+
+.sans-serif, body {
+  font-family: Arial, sans-serif;
+}
+
+.monospace, article pre,
+article code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+h1, h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+  margin-bottom: 0.2rem;
+  text-indent: 0.05rem;
+  color: #888888;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+hr {
+  border-top: 4px solid #3b3b3b;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  opacity: 1;
+}
+
+.table {
+  color: #f1fbdd;
+}
+.table th {
+  color: #f93030;
+}
+.table tr {
+  border-bottom: #3b3b3b solid 4px;
+}
+.table tr:last-child {
+  border-bottom: transparent solid 4px;
+}
+
+/**
+ * * CORE
+ * * CORE
+ * * CORE
+ * * CORE
+ * * CORE
+ * */
+body {
+  background: url("/assets/images/stars.jpg") top right no-repeat scroll #262320;
+  color: #f1fbdd;
+}
+
+a,
+a:link,
+a:visited {
+  color: #f97830;
+}
+
+a:hover,
+a:active {
+  color: #f93030;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+::selection {
+  background: #f93030;
+  color: #262320;
+}
+
+.container .container,
+.container .container-fluid {
+  padding: 0;
+}
+
+.img-100, article img {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/**
+ * * ARTICLE
+ * * ARTICLE
+ * * ARTICLE
+ * * ARTICLE
+ * * ARTICLE
+ * */
+article h1 {
+  font-size: 5rem;
+  line-height: 2.2rem;
+  margin-bottom: 1.4rem;
+  letter-spacing: -0.4rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #f93030;
+}
+@media (max-width: 576px) {
+  article h1 {
+    font-size: 2rem;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0;
+    color: #f93030;
+    -webkit-text-stroke: 0px transparent;
+  }
+  article hr {
+    display: none;
+  }
+}
+article h2 {
+  border-bottom: 4px solid #3b3b3b;
+}
+article p, article h2 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+article pre,
+article code {
+  color: #f93030;
+}
+/**
+ * * ORNAMENTATION
+ * * ORNAMENTATION
+ * * ORNAMENTATION
+ * * ORNAMENTATION
+ * * ORNAMENTATION
+ * */
+body:before {
+  content: "";
+  position: absolute;
+  background: #f97830;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.faded {
+  color: #888888;
+}
+
+.danger {
+  color: #f93030;
+}
+
+.img-border, article img {
+  border: 4px solid #3b3b3b;
+}
+
+.flare {
+  margin-top: 1.3rem;
+}
+
+.romans {
+  font-size: 1.3rem;
+  color: #f93030;
+}
+
+@media (max-width: 576px) {
+  .flare {
+    margin-top: 0;
+  }
+}
+/**
+ * * SECTION
+ * * FADE
+ * * IN
+ * * ANIMATION
+ * */
+.production .fade {
+  opacity: 0;
+  animation-name: fadeInAnimation;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/**
+ * * DEUS
+ * * EX
+ * * MACHINA
+ * * COMPANY
+ * * LETTERMARK
+ * */
+.lettermark {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+}
+
+.production .lettermark {
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.production .lettermark-deus {
+  animation-name: deusAnimation;
+}
+@keyframes deusAnimation {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.production .lettermark-ex {
+  animation-name: exAnimation;
+}
+@keyframes exAnimation {
+  from {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.production .lettermark-machina {
+  animation-name: machinaAnimation;
+}
+@keyframes machinaAnimation {
+  from {
+    transform: translateY(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.production .lettermark-company {
+  animation-name: companyAnimation;
+}
+@keyframes companyAnimation {
+  from {
+    transform: translateY(-400%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

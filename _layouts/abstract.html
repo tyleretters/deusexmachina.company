@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include variables.html %}
 {% include head.html %}
-<body{% if jekyll.environment == "production" %} class=" production"{% endif %}>
-{% include nav.html %}
+<body class="production" {% if jekyll.environment == "production" %} class="production"{% endif %}>
+{% include lettermark.html %}
 <div class="container">
   <div class="row">
     <div class="col">

@@ -1,0 +1,53 @@
+<div class="container fade">
+  <div class="row">
+    <div class="col col-md-6">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 col-md-4 mb-4">
+            <h2>Services</h2>
+            <hr>
+            <ul>
+              <li>Future</li>
+              <li>Internet</li>
+              <li>R&D</li>
+              <li>Strategy</li>
+              <li>Branding</li>
+              <li>Design</li>
+              <li>Technology</li>
+            </ul>
+          </div>
+          <div class="col-4 col-md-4 mb-4">
+            <h2>Virtues</h2>
+            <hr>
+            <ul>
+              <li>Prudence</li>
+              <li>Justice</li>
+              <li>Fortitude</li>
+              <li>Temperance</li>
+              <li class="scramble">Community</li>
+            </ul>
+          </div>
+          <div class="col-4 col-md-4 mb-4">
+            <h2>Navigate</h2>
+            <hr>
+            <ul>
+              {% for item in site.data.nav.items %}
+              <li>{% if item.url == page.url %}&#8594; {% endif %}<a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mb-4">
+            <h2>DXMC</h2>
+            <hr>
+            <p><strong class="danger serif">de·us ex ma·chi·na</strong> <em class="faded">noun</em><br>an unexpected power or event saving a seemingly hopeless situation, especially as a contrived plot device in a play or novel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-5 offset-md-1 mb-4 flare">
+      <img src="/assets/images/flare.jpg" class="img-100 img-border" alt="SCREAMING ORCHID" />
+    </div>
+  </div>
+</div>

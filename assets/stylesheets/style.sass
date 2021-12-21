@@ -1,3 +1,292 @@
-.active
-  font-weight: 800
+/**
+ * VARIABLES
+ * VARIABLES
+ * VARIABLES
+ * VARIABLES
+ * VARIABLES
+ */
 
+$black: #000000
+$dark: #262320
+$faded: #888888
+$deepFaded: #3b3b3b
+$light: #f1fbdd
+$accent: #f97830
+$danger: #f93030
+$ruleSize: 4px
+
+/**
+ * TYPOGRAPHY
+ * TYPOGRAPHY
+ * TYPOGRAPHY
+ * TYPOGRAPHY
+ * TYPOGRAPHY
+ */
+
+.type-abstract
+  text-rendering: optimizeLegibility
+
+.serif
+  @extend .type-abstract
+  font-family: 'Times New Roman', serif
+
+.sans-serif
+  @extend .type-abstract
+  font-family: Arial, sans-serif
+
+.monospace
+  @extend .type-abstract
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+
+h1, h2
+  font-size: 1.2rem
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: .1rem
+  line-height: 1.2rem
+  margin-bottom: .2rem
+  text-indent: .05rem
+  color: $faded
+
+p
+  font-size: 1rem
+  line-height: 1.2rem
+  margin-bottom: 1.2rem
+
+hr
+  border-top: $ruleSize solid $deepFaded
+  margin-top: 0
+  margin-bottom: .4rem
+  opacity: 1
+
+.table
+  color: $light
+
+  th
+    color: $danger
+
+  tr
+    border-bottom: $deepFaded solid $ruleSize
+
+  tr:last-child
+    border-bottom: transparent solid $ruleSize
+
+/**
+ * CORE
+ * CORE
+ * CORE
+ * CORE
+ * CORE
+ */
+
+body
+  @extend .sans-serif
+  background: url("/assets/images/stars.jpg") top right no-repeat scroll $dark
+  color: $light
+
+a,
+a:link,
+a:visited
+  color: $accent
+
+a:hover,
+a:active
+  color: $danger
+
+ul
+  margin: 0
+  padding: 0
+
+  li
+    list-style: none
+
+::selection
+  background: $danger
+  color: $dark
+
+.container .container,
+.container .container-fluid
+  padding: 0
+
+.img-100
+  width: 100%
+  max-width: 1000px
+  margin-left: auto
+  margin-right: auto
+  display: block
+
+/**
+ * ARTICLE
+ * ARTICLE
+ * ARTICLE
+ * ARTICLE
+ * ARTICLE
+ */
+
+
+article
+
+  h1
+    @extend .serif
+    font-size: 5rem
+    line-height: 2.2rem
+    margin-bottom: 1.4rem
+    letter-spacing: -0.4rem
+    color: transparent
+    -webkit-text-stroke: 1px $danger
+
+  @media (max-width: 576px)
+    h1
+      font-size: 2rem
+      line-height: 1.2rem
+      margin-bottom: 1rem
+      letter-spacing: 0
+      color: $danger
+      -webkit-text-stroke: 0px transparent
+
+    hr
+      display: none
+
+
+  h2
+    border-bottom: $ruleSize solid $deepFaded
+
+  p, h2
+    font-size: 1.2rem
+    line-height: 1.6rem
+    margin-bottom: 1.6rem
+
+  pre,
+  code
+    @extend .monospace
+    color: $danger
+
+  img
+    @extend .img-100
+    @extend .img-border
+
+/**
+ * ORNAMENTATION
+ * ORNAMENTATION
+ * ORNAMENTATION
+ * ORNAMENTATION
+ * ORNAMENTATION
+ */
+
+body:before
+  content: ""
+  position: absolute
+  background: $accent
+  left: 0
+  right: 0
+  height: $ruleSize
+
+.faded
+  color: $faded
+
+.danger
+  color: $danger
+
+.img-border
+  border: 4px solid $deepFaded
+
+.flare
+  margin-top: 1.3rem
+
+.romans
+  @extend .serif
+  font-size: 1.3rem
+  color: $danger
+
+@media (max-width: 576px)
+  .flare
+    margin-top: 0
+
+/**
+ * SECTION
+ * FADE
+ * IN
+ * ANIMATION
+ */
+
+.production
+
+  .fade
+    opacity: 0
+    animation-name: fadeInAnimation
+    animation-iteration-count: 1
+    animation-duration: 2s
+    animation-timing-function: ease-out
+    animation-fill-mode: forwards
+
+  @keyframes fadeInAnimation
+    from
+      opacity: 0
+    to
+      opacity: 1
+
+/**
+ * DEUS
+ * EX
+ * MACHINA
+ * COMPANY
+ * LETTERMARK
+ */
+
+.lettermark
+  position: relative
+  width: 100%
+  max-width: 300px
+  display: block
+
+.production
+
+  .lettermark
+    animation-iteration-count: 1
+    animation-duration: 2s
+    animation-timing-function: ease-out
+    animation-fill-mode: forwards
+  
+  .lettermark-deus
+    animation-name: deusAnimation
+
+  @keyframes deusAnimation
+    from
+      transform: translateY(-100%)
+      opacity: 0
+    to
+      transform: translateY(0)
+      opacity: 1
+
+  .lettermark-ex
+    animation-name: exAnimation
+
+  @keyframes exAnimation
+    from
+      transform: translateY(-200%)
+      opacity: 0
+    to
+      transform: translateY(0)
+      opacity: 1
+
+  .lettermark-machina
+    animation-name: machinaAnimation
+
+  @keyframes machinaAnimation
+    from
+      transform: translateY(-300%)
+      opacity: 0
+    to
+      transform: translateY(0)
+      opacity: 1
+
+  .lettermark-company
+    animation-name: companyAnimation
+
+  @keyframes companyAnimation
+    from
+      transform: translateY(-400%)
+      opacity: 0
+    to
+      transform: translateY(0)
+      opacity: 1

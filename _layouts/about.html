@@ -1,0 +1,32 @@
+---
+layout: abstract
+---
+<div class="container fade">
+  <div class="row">
+    <div class="col-sm-12 order-sm-2 col-md-6">
+      <h2 id="machinists">Machinists</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row mb-5 d-flex">
+    <div class="col-sm-12 order-2 col-md-6 order-md-1">
+      <p>We call ourselves <em>machinists</em> because we build your <em>deus ex machina</em>. We are a collective of consultants, designers, artists, hackers, and musicians. We are for decentralization, asychronicity, mutuality, profession courtesies, and emotional support.</p>
+      <table class="table mb-0">
+        <tr>
+          <th>CALL SIGN</th>
+          <th>ROLE</th>
+        </tr>
+        {% assign machinists_by_order = site.data.machinists | sort: "callsign" %}
+        {% for machinist in machinists_by_order %}  
+        <tr>
+          <td id="{{ machinist.anchor }}">{{ machinist.callsign }}</td>
+          <td>{{ machinist.title }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <div class="col-sm-12 order-1 col-md-5 order-md-2 offset-md-1 mb-4 flare">
+      <img src="/assets/images/machinist.jpg" class="img-100 img-border" />
+    </div>
+  </div>
+</div>

@@ -1,6 +1,5 @@
-# see _data/meta.yml (so you don't have to restart jekyll to see changes)
-baseurl: /perfect-bootstrap-jekyll
-url: https://tyleretters.github.io/perfect-bootstrap-jekyll
+baseurl: /
+url: https://deusexmachina.company
 permalink: pretty
 sort_by: year, month
 markdown: kramdown
@@ -10,3 +9,4 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 include: ['_pages']
+excerpt_separator: <!--x-->

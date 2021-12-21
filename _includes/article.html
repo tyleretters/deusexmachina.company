@@ -1,21 +1,13 @@
-<article class="container single">
-  <div class="col mb-md-4">
-      <h1 class="scramble">{{ post.title }}</h1>
-  </div>  
+<article class="container">
   <div class="row">
-    <div class="col mb-md-4">
-      <hr>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 col-md-5 mb-md-4">
+    <div class="col-sm-12 col-md-5 mb-md-4 text-md-end">
+      <h1>{{ post.title }}</h1>
       <p>
-        <span class="faded">Title:</span> {{ post.title }}<br>
         <span class="faded">Reading Time:</span> {{ post.time }}<br>
-        <span class="faded">By:</span> <a href="/about#{{ post.author | replace: ' ', '-' | downcase }}">{{ post.author }}</a>
-        {%- assign date_format = site.minima.date_format | default: "%Y-%m-%d " -%}<br>
+        <span class="faded">By:</span> <a href="/about#{{ post.author | replace: ' ', '-' | downcase }}">{{ post.author }}</a><br>
+        {%- assign date_format = site.minima.date_format | default: "%Y-%m-%d " -%}
         <span class="faded">On:</span> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time><br>
-        <span class="faded">At:</span> <a href="{{ post.url }}">Permalink</a>
+        <span class="faded">At:</span> <a href="{{ site.url }}{{ post.url }}">Permalink</a>
       </p>
     </div>
     <div class="col-sm-12 col-md-7 mb-4">

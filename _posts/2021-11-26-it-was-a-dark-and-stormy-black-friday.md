@@ -5,7 +5,6 @@ title: "It Was a Dark and Stormy Black Friday"
 date: "2021-11-26"
 time: 3 minutes 28 seconds
 ---
-
 ![High Voltage](/assets/content/high-voltage.jpg)
 
 It was a dark and stormy Black Friday.

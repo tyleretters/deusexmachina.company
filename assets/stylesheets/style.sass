@@ -63,7 +63,7 @@ hr
   color: $light
 
   th
-    color: $danger
+    color: $faded
 
   tr
     border-bottom: $deepFaded solid $ruleSize
@@ -174,11 +174,17 @@ body:before
 .danger
   color: $danger
 
+.light
+  color: $light
+
 .img-border
   border: 4px solid $deepFaded
 
-.flare
+.img-push
   margin-top: 1.3rem
+
+.flare
+  @extend .img-push  
   position: relative
   overflow: visible
 
@@ -212,31 +218,27 @@ body:before
 .romans
   @extend .serif
   font-size: 1.3rem
-  color: $danger
-
 
 /**
- * SECTION
- * FADE
- * IN
- * ANIMATION
+ * FADE IN
+ * FADE IN
+ * FADE IN
+ * FADE IN
+ * FADE IN
  */
+.fade
+  opacity: 0
+  animation-name: fadeInAnimation
+  animation-iteration-count: 1
+  animation-duration: 2s
+  animation-timing-function: ease-out
+  animation-fill-mode: forwards
 
-.production
-
-  .fade
+@keyframes fadeInAnimation
+  from
     opacity: 0
-    animation-name: fadeInAnimation
-    animation-iteration-count: 1
-    animation-duration: 2s
-    animation-timing-function: ease-out
-    animation-fill-mode: forwards
-
-  @keyframes fadeInAnimation
-    from
-      opacity: 0
-    to
-      opacity: 1
+  to
+    opacity: 1
 
 /**
  * DEUS
@@ -251,55 +253,51 @@ body:before
   width: 100%
   max-width: 300px
   display: block
+  animation-iteration-count: 1
+  animation-duration: 2s
+  animation-timing-function: ease-out
+  animation-fill-mode: forwards
 
-.production
+.lettermark-deus
+  animation-name: deusAnimation
 
-  .lettermark
-    animation-iteration-count: 1
-    animation-duration: 2s
-    animation-timing-function: ease-out
-    animation-fill-mode: forwards
-  
-  .lettermark-deus
-    animation-name: deusAnimation
+@keyframes deusAnimation
+  from
+    transform: translateY(-100%)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1
 
-  @keyframes deusAnimation
-    from
-      transform: translateY(-100%)
-      opacity: 0
-    to
-      transform: translateY(0)
-      opacity: 1
+.lettermark-ex
+  animation-name: exAnimation
 
-  .lettermark-ex
-    animation-name: exAnimation
+@keyframes exAnimation
+  from
+    transform: translateY(-200%)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1
 
-  @keyframes exAnimation
-    from
-      transform: translateY(-200%)
-      opacity: 0
-    to
-      transform: translateY(0)
-      opacity: 1
+.lettermark-machina
+  animation-name: machinaAnimation
 
-  .lettermark-machina
-    animation-name: machinaAnimation
+@keyframes machinaAnimation
+  from
+    transform: translateY(-300%)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1
 
-  @keyframes machinaAnimation
-    from
-      transform: translateY(-300%)
-      opacity: 0
-    to
-      transform: translateY(0)
-      opacity: 1
+.lettermark-company
+  animation-name: companyAnimation
 
-  .lettermark-company
-    animation-name: companyAnimation
-
-  @keyframes companyAnimation
-    from
-      transform: translateY(-400%)
-      opacity: 0
-    to
-      transform: translateY(0)
-      opacity: 1
+@keyframes companyAnimation
+  from
+    transform: translateY(-400%)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1

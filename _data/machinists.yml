@@ -1,58 +1,31 @@
 - callsign: SCREAMING ORCHID
-  name: Tyler Etters
   title: Gonzo Machinist
-  pronouns: he / him / his
   anchor: screaming-orchid
-  url: https://nor.the-rn.info
-  github: https://github.com/tyleretters
-  linkedin: https://www.linkedin.com/in/tyleretters
 
 - callsign: DREAMING LION
-  name: "-"
   title: Narrative Machinist
-  pronouns: he / him / his
   anchor: dreaming-lion
-  url: 
 
 - callsign: SOFT JELLY
-  name: "-"
   title: Narrative Machinist
-  pronouns: he / him / his
   anchor: soft-jelly
-  url: 
 
 - callsign: BEAMING MANTIS
-  name: "-"
   title: Cybernetic Machinist
-  pronouns: he / him / his
   anchor: valid-orca
-  url: 
 
 - callsign: SCRYING RAVEN
-  name: "-"
   title: H3 Machinist
-  pronouns: he / him / his
   anchor: scrying-raven
-  url: 
-  site: 
 
 - callsign: MEWLING TIGER
-  name: "-"
   title: Couture Machinist
-  pronouns: he / him / his
   anchor: scrying-raven
-  url:
 
 - callsign: UNREMEMBERED OX
-  name: "-"
   title: Crypto Machinist
-  pronouns:
-  anchor:
-  url:
+  anchor: unremembered-ox
 
 - callsign: ONYX CICADA
-  name: "-"
   title: Light Machinist
-  pronouns:
-  anchor:
-  url:
+  anchor: onyx-cicada

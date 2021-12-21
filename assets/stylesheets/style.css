@@ -58,7 +58,7 @@ hr {
   color: #f1fbdd;
 }
 .table th {
-  color: #f93030;
+  color: #888888;
 }
 .table tr {
   border-bottom: #3b3b3b solid 4px;
@@ -170,12 +170,19 @@ body:before {
   color: #f93030;
 }
 
+.light {
+  color: #f1fbdd;
+}
+
 .img-border, article img {
   border: 4px solid #3b3b3b;
 }
 
-.flare {
+.img-push, .flare {
   margin-top: 1.3rem;
+}
+
+.flare {
   position: relative;
   overflow: visible;
 }
@@ -208,16 +215,16 @@ body:before {
 }
 .romans {
   font-size: 1.3rem;
-  color: #f93030;
 }
 
 /**
- * * SECTION
- * * FADE
- * * IN
- * * ANIMATION
+ * * FADE IN
+ * * FADE IN
+ * * FADE IN
+ * * FADE IN
+ * * FADE IN
  * */
-.production .fade {
+.fade {
   opacity: 0;
   animation-name: fadeInAnimation;
   animation-iteration-count: 1;
@@ -225,6 +232,7 @@ body:before {
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
+
 @keyframes fadeInAnimation {
   from {
     opacity: 0;
@@ -233,7 +241,6 @@ body:before {
     opacity: 1;
   }
 }
-
 /**
  * * DEUS
  * * EX
@@ -246,17 +253,16 @@ body:before {
   width: 100%;
   max-width: 300px;
   display: block;
-}
-
-.production .lettermark {
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-.production .lettermark-deus {
+
+.lettermark-deus {
   animation-name: deusAnimation;
 }
+
 @keyframes deusAnimation {
   from {
     transform: translateY(-100%);
@@ -267,9 +273,10 @@ body:before {
     opacity: 1;
   }
 }
-.production .lettermark-ex {
+.lettermark-ex {
   animation-name: exAnimation;
 }
+
 @keyframes exAnimation {
   from {
     transform: translateY(-200%);
@@ -280,9 +287,10 @@ body:before {
     opacity: 1;
   }
 }
-.production .lettermark-machina {
+.lettermark-machina {
   animation-name: machinaAnimation;
 }
+
 @keyframes machinaAnimation {
   from {
     transform: translateY(-300%);
@@ -293,9 +301,10 @@ body:before {
     opacity: 1;
   }
 }
-.production .lettermark-company {
+.lettermark-company {
   animation-name: companyAnimation;
 }
+
 @keyframes companyAnimation {
   from {
     transform: translateY(-400%);

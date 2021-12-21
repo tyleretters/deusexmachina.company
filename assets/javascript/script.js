@@ -94,16 +94,16 @@ class TextScramble {
 const phrases = [
   'Community',
   'Now',
-  '2022',
-  'Alienation',
   'the Possible',
   'Change',
   '⁂',
   'አሁን',
   'Now',
-  'Anarchy',
+  'amor fati',
+  'the bold',
+  'Hope',
   'Cyborgs',
-  'Lost Futures',
+  'Reclaimed Futures',
   'the Anthropocene',
   '&#19932;',
   '现在',
@@ -112,7 +112,8 @@ const phrases = [
   'Exit',
   'the Impatient',
   '&#10178;',
-  'τώρα'
+  'τώρα',
+  'Alienation'
 ]
 
 /* todo: scramble each */

@@ -41,34 +41,43 @@ layout: abstract
           </div>
         </div>
         <div class="row">
-          <div class="col mb-4">
-            <h2>DXMC</h2>
-            <hr>
-            <p><strong class="danger serif">de·us ex ma·chi·na</strong> <em class="faded">noun</em><br>an unexpected power or event saving a seemingly hopeless situation, especially as a contrived plot device in a play or novel.</p>
+          <div class="col-sm-12 col-md-8">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="mb-4">
+                  <h2>We Are...</h2>
+                  <hr>
+                  <p><strong class="danger serif">de·us ex ma·chi·na</strong> <em class="faded">noun</em><br>an unexpected power or event saving a seemingly hopeless situation, especially as a surprising plot device in a play or novel.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-4">
+                  <h2>You Are...</h2>
+                  <hr>
+                  <p>Building the new world. Lighting signal flares. Watching oceans rise. Outrunning despair. But also need to look pro and probably build something involving code?</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col mb-4">
-            <h2>You Are...</h2>
-            <hr>
-            <p>Lighting signal flares. Watching oceans rise. Resisting despair. But also need to look pro and probably build something involving code?</p>
+          <div class="col-4 offset-4 col-md-4 offset-md-0 mb-4 mb-sm-5">
+            <img src="/assets/images/numogram.svg" class="img-100" alt="Our Process" />
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6 col-md-4 mb-4">
             <h2>Act<span class="romans">i</span>on</h2>
             <hr>
-            <p><a href="https://calendly.com/tyleretters/15">Schedule a consultation</a> with our machinists.</p>
+            <p><a href="https://calendly.com/tyleretters/15">Share your story</a> with a machinist.</p>
           </div>
           <div class="col-sm-6 col-md-4 mb-4">
             <h2>Act<span class="romans">ii</span>on</h2>
             <hr>
-            <p>Tell your story, build the machine.</p>
+            <p>Design the machine with our proven process.</p>
           </div>
           <div class="col-sm-6 col-md-4 mb-4">
             <h2>Act<span class="romans">iii</span>on</h2>
             <hr>
-            <p>Escape peril via <em>deus ex machina</em>.</p>
+            <p>Transcend peril via <em>deus ex machina</em>.</p>
           </div>
         </div>
       </div>
@@ -76,6 +85,25 @@ layout: abstract
     <div class="col-sm-12 col-md-5 offset-md-1 mb-4 flare">
       <a href="/assets/images/flare.jpg"><img src="/assets/images/flare.jpg" class="img-100 img-border" alt="SCREAMING ORCHID" /></a>
       <h1 class="tech scramble"></h1>
+    </div>
+  </div>
+</div>
+<div class="container fade">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 mb-5">
+      <h2>Excommunicado</h2>
+      <hr>
+      <img src="/assets/images/excommunicado.svg" alt="Excommunicado" /></a>
+    </div>
+    <div class="col-sm-12 col-md-5 offset-md-1 mb-4">
+      <h2>PROPAGANDA</h2>
+      <hr>
+      <ul>
+      {% for post in site.posts%}
+        {%- assign date_format = site.minima.date_format | default: "%h %d" -%}
+        <li><a href="{[ post.url }}">{{ post.title }}</a>, {{ post.date | date: date_format }}</li>
+      {% endfor %}
+      </ul>
     </div>
   </div>
 </div>

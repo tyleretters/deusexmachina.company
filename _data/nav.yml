@@ -9,5 +9,5 @@ items:
 - title: About
   url: /about
 
-- title: Feed
+- title: XML
   url: /feed.xml

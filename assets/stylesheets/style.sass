@@ -71,6 +71,26 @@ hr
   tr:last-child
     border-bottom: transparent solid $ruleSize
 
+.tech
+  @extend .serif
+  font-size: 4.8rem
+  line-height: 2.6rem
+  letter-spacing: -0.2rem
+  color: transparent
+  position: relative
+  -webkit-text-stroke: 1px $danger
+
+@media (max-width: 767px)
+  .tech
+    color: $danger
+    -webkit-text-stroke: 0
+    font-size: 2.4rem
+    font-weight: 400
+    letter-spacing: .1rem
+    line-height: 2.4rem
+    margin-top: 0
+
+
 /**
  * CORE
  * CORE
@@ -167,6 +187,17 @@ body:before
 
 .img-push
   margin-top: 1.3rem
+
+/**
+ * TESTUMONIALS
+ * TESTUMONIALS
+ * TESTUMONIALS
+ * TESTUMONIALS
+ * TESTUMONIALS
+ */
+
+.mb-10
+  margin-bottom: 100px
 
 /**
  * FADE IN

@@ -3,5 +3,8 @@ items:
 - title: Home
   url: /
 
+- title: Testimonials
+  url: /testimonials
+
 - title: About
   url: /about

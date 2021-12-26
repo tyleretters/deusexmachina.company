@@ -1,14 +1,5 @@
 $(function() {
 
-/*
- * Make all post images link to high res versions of themsleves.
- * The other options besides JS were to do it in markdown which is an awful author/writing
- * experience or extend Jekyll to do this during compilation. ¯\_(ツ)_/¯
- */
-$('article img').each(function() {
-  $(this).wrap('<a href="' + this.src + '"></a>');
-});
-
 // Thanks to Andy E for this shuffler:
 // https://stackoverflow.com/questions/3943772/how-do-i-shuffle-the-characters-in-a-string-in-javascript
 String.prototype.shuffle = function () {
@@ -92,32 +83,28 @@ class TextScramble {
 /* thanks to https://commoner.earth for the the holy ciphers */
 /* https://github.com/tyleretters/apodcastfornow.com/blob/master/assets/script.js */
 const phrases = [
+  'the Anthropocene',
   'Community',
+  'the Impatient',
   'Now',
   'the Possible',
   'Change',
+  'the Open Sea',
   '⁂',
+  'the Bold',
   'አሁን',
-  'Now',
+  'the Hopeful',
   'amor fati',
-  'the bold',
-  'Hope',
+  'the Lost Ones',
   'Cyborgs',
   'Reclaimed Futures',
-  'the Anthropocene',
-  '&#19932;',
+  '䷜',
   '现在',
-  'Now',
-  'the Open Sea',
-  'Exit',
-  'the Impatient',
-  '&#10178;',
-  'τώρα',
+  'Exiting the Vampire Castle',
+  '☥',
   'Alienation'
 ]
 
-/* todo: scramble each */
-/* todo: scramble only the title? */
 if ($('.scramble').length) {
   const el = document.querySelector('.scramble');
   const fx = new TextScramble(el);
@@ -125,7 +112,7 @@ if ($('.scramble').length) {
   let counter = 0;
   const next = () => {
     fx.setText(phrases[counter]).then(() => {
-      setTimeout(next, 800);
+      setTimeout(next, 1200);
     })
     counter = (counter + 1) % phrases.length;
   }

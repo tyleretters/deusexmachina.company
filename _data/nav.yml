@@ -3,11 +3,5 @@ items:
 - title: Home
   url: /
 
-- title: Propaganda
-  url: /propaganda
-
 - title: About
   url: /about
-
-- title: XML
-  url: /feed.xml

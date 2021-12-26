@@ -81,7 +81,7 @@ hr
 
 body
   @extend .sans-serif
-  background: url("/assets/images/stars.jpg") top right no-repeat scroll $dark
+  background: $dark
   color: $light
 
 a,
@@ -92,6 +92,20 @@ a:visited
 a:hover,
 a:active
   color: $danger
+
+a.cta
+  background: $dark
+  color: $accent
+  border: $ruleSize solid $accent
+  display: block
+  text-align: center
+  font-size: 1.8rem
+  text-decoration: none
+
+  &:hover
+    background: $danger
+    border-color: $light
+    color: $light
 
 ul
   margin: 0
@@ -114,43 +128,6 @@ ul
   margin-left: auto
   margin-right: auto
   display: block
-
-/**
- * ARTICLE
- * ARTICLE
- * ARTICLE
- * ARTICLE
- * ARTICLE
- */
-
-
-article
-  margin-bottom: 6.4rem
-
-  h1
-    font-size: 3.2rem
-    line-height: 3.2rem
-    margin-bottom: 1.6rem
-    letter-spacing: 0
-    color: $danger
-    -webkit-text-stroke: 0px transparent
-
-  h2
-    border-bottom: $ruleSize solid $deepFaded
-
-  p, h2
-    font-size: 1.2rem
-    line-height: 1.6rem
-    margin-bottom: 1.6rem
-
-  pre,
-  code
-    @extend .monospace
-    color: $danger
-
-  img
-    @extend .img-100
-    @extend .img-border
 
 /**
  * ORNAMENTATION
@@ -180,44 +157,16 @@ body:before
 .img-border
   border: 4px solid $deepFaded
 
+/**
+ * ABOUT
+ * ABOUT
+ * ABOUT
+ * ABOUT
+ * ABOUT
+ */
+
 .img-push
   margin-top: 1.3rem
-
-.flare
-  @extend .img-push  
-  position: relative
-  overflow: visible
-
-  .tech
-    @extend .serif
-    font-size: 5rem
-    line-height: 4rem
-    margin-top: -50%
-    letter-spacing: -0.4rem
-    color: transparent
-    -webkit-text-stroke: 1px $danger
-    -webkit-transform: rotate(90deg)
-    position: relative
-
-@media (max-width: 576px)
-  .flare
-    overflow: hidden
-    margin-top: 0
-  
-    .tech
-      color: $danger
-      -webkit-text-stroke: 0
-      -webkit-transform: none
-      font-size: 2.4rem
-      font-weight: 400
-      letter-spacing: .1rem
-      line-height: 3.6rem
-      margin-top: 0
-
-
-.romans
-  @extend .serif
-  font-size: 1.3rem
 
 /**
  * FADE IN

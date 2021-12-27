@@ -28,7 +28,7 @@
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-h1, h2 {
+h1, h2, a.dxmc-nav {
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -147,6 +147,17 @@ ul li {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+/**
+ * * NAVIGATION
+ * * NAVIGATION
+ * * NAVIGATION
+ * * NAVIGATION
+ * * NAVIGATION
+ * */
+a.dxmc-nav span.dxmc-arrow {
+  padding-bottom: 50px;
 }
 
 /**

@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 offset-md-2 order-0 order-md-1">
+      <div class="container-fluid">
+        <div class="row">
+          {% for item in site.data.nav.items %}
+          <div class="col-4 mt-2">
+            <a href="{{ item.url }}" class="dxmc-nav{% if item.url == page.url %} active{% endif %}">{{ item.title }}{% if item.url == page.url %}<span class="dxmc-arrow">&nbsp;&#8592;</span>{% endif %}</a>
+          </div>
+          {% endfor %}      
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-4 mt-1 mt-md-4 mb-4 order-1 order-md-0">
+      <a href="/">
+        <img src="/assets/images/lettermark-deus.svg" class="mb-2 lettermark lettermark-deus" />
+        <img src="/assets/images/lettermark-ex.svg" class="mb-2 lettermark lettermark-ex" />
+        <img src="/assets/images/lettermark-machina.svg" class="mb-2 lettermark lettermark-machina" />
+        <img src="/assets/images/lettermark-company.svg" class="lettermark lettermark-company" />
+        <h1 class="visually-hidden">DEUS EX MACHINA COMPANY</h1>
+      </a>
+    </div>
+  </div>
+</div>

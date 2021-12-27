@@ -15,7 +15,7 @@ layout: abstract
     <div class="col col-md-6">
       <div class="container-fluid">
         <div class="row">
-          <div class="col mb-4">
+          <div class="col-4 mb-4">
             <h2>Services</h2>
             <hr>
             <ul>
@@ -28,7 +28,7 @@ layout: abstract
               <li>Technology</li>
             </ul>
           </div>
-          <div class="col mb-4">
+          <div class="col-4 mb-4">
             <h2>Virtues</h2>
             <hr>
             <ul>
@@ -38,28 +38,26 @@ layout: abstract
               <li>Temperance</li>
             </ul>
           </div>
-          <div class="col mb-4">
-            <h2>Site</h2>
+          <div class="col-4 mb-4">
+            <h2>Contact</h2>
             <hr>
             <ul>
-              {% for item in site.data.nav.items %}
-              <li>{% if item.url == page.url %}&#8594; {% endif %}<a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
-              {% endfor %}
+              <li><a href="/assets/images/screaming-orchid.jpg">View Email & Signal</a></li>
             </ul>
           </div>
         </div>
         <div class="row">
-          <div class="col mb-4">
+          <div class="col-4 mb-4">
             <h2>We Are...</h2>
             <hr>
             <p class="mb-0"><strong class="danger serif">de·us ex ma·chi·na</strong> <em class="faded">noun</em><br>an unexpected power or event saving a seemingly hopeless situation, especially as a surprising plot device in a play or novel.</p>
           </div>
-          <div class="col mb-4">
+          <div class="col-4 mb-4">
             <h2>You Are...</h2>
             <hr>
             <p class="mb-0">Building the new world. Lighting signal flares. Watching oceans rise. Outrunning despair. But also need to look pro and probably build something involving code?</p>
           </div>
-          <div class="col mb-4">
+          <div class="col-4 mb-4">
             <h2>Do This...</h2>
             <hr>
             <p><span class="faded">1.</span> <a href="https://calendly.com/tyleretters/15">Share your story</a> with a machinist.</p>
@@ -78,22 +76,25 @@ layout: abstract
 </div>
 <div class="container fade">
   <div class="row">
-    <div class="col mb-4">
+    <div class="col-sm-12 col-md-6 mb-4">
+      <h2>Our Process</h2>
+      <hr>
+      <div class="container fade">
+        <div class="row">
+          <div class="col-6 offset-3">
+            <img src="/assets/images/numogram.svg" alt="Numogram" class="mt-4" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 mb-4">
       <h2>Excommunicado</h2>
       <hr>
-      <img src="/assets/images/excommunicado.svg" alt="Excommunicado" /></a>
-    </div>
-  </div>
-  <div class="container fade">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 text-md-end">
-        <p class="faded">Most agencies fly logos like these with pride.</p>
-        <p class="danger"><strong>Not us.</strong></p>
-      </div>
-      <div class="col-sm-12 col-md-6 mb-4 mb-md-5">
-        <p class="faded">We've consulted into a decent number of <a href="https://en.wikipedia.org/wiki/Fortune_500">Fortune 500</a> companies in our time. We won't anymore. Typically companies of this size are riddled with practices that yield human suffering and environmental destruction while deadlocked by greed-politics and a raging case of of but-we-have-always-done-it-this-way-itis.</p>
-        <p class="faded"><em>This sentence was written on an Apple computer, purchased with a JPMorgan Chase bank account, using an AT&T connection, on Walgreens meds.</em></p>
-      </div>
+      <img src="/assets/images/excommunicado.svg" alt="Excommunicado" class="mb-5" /></a>
+      <p>Most agencies fly logos like these with pride. <strong>Not us.</strong></p>
+      <p>We've consulted into many of the eldritch <a href="https://en.wikipedia.org/wiki/Fortune_500">Fortune 500</a>. Our labor and cycles will service their dread designs no more. In their wake: human suffering and environmental destruction. In their hearts: deadlocked greed-politics and a raging affliction planetary indifference.</p>
+      <p>The revolution is already happening.</p>
+      <p class="mb-0"><a href="https://en.wikipedia.org/wiki/The_Revolution_Will_Not_Be_Televised">And it is not being streamed.</a></p>
     </div>
   </div>
 </div>

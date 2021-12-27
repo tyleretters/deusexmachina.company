@@ -157,11 +157,33 @@ ul
  * NAVIGATION
  */
 
-a.dxmc-nav
-  @extend h2
+.dxmc-nav-col
 
-  span.dxmc-arrow
-    padding-bottom: 50px 
+  a
+    padding-top: $ruleSize
+    font-size: 1rem
+    font-weight: 800
+    text-transform: uppercase
+    text-decoration: none
+    text-align: center
+    display: block
+    color: $accent
+    text-align: center
+    text-decoration: none
+
+    &:hover
+      color: $danger
+      text-decoration: underline
+    
+.dxmc-nav-col.active
+
+  a
+    color: $dark
+    background: $accent
+
+    &:hover
+      color: $dark
+      text-decoration: none
 
 /**
  * ORNAMENTATION

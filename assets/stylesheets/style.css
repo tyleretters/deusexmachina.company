@@ -28,7 +28,7 @@
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-h1, h2, a.dxmc-nav {
+h1, h2 {
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -156,8 +156,30 @@ ul li {
  * * NAVIGATION
  * * NAVIGATION
  * */
-a.dxmc-nav span.dxmc-arrow {
-  padding-bottom: 50px;
+.dxmc-nav-col a {
+  padding-top: 4px;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #f97830;
+  text-align: center;
+  text-decoration: none;
+}
+.dxmc-nav-col a:hover {
+  color: #f93030;
+  text-decoration: underline;
+}
+
+.dxmc-nav-col.active a {
+  color: #262320;
+  background: #f97830;
+}
+.dxmc-nav-col.active a:hover {
+  color: #262320;
+  text-decoration: none;
 }
 
 /**

@@ -1,11 +1,11 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-12 col-md-6 offset-md-2 order-0 order-md-1">
+    <div class="col-sm-12 col-md-6 offset-md-2 mb-3 mb-md-0 order-0 order-md-1">
       <div class="container-fluid">
         <div class="row">
           {% for item in site.data.nav.items %}
-          <div class="col-4 mt-2">
-            <a href="{{ item.url }}" class="dxmc-nav{% if item.url == page.url %} active{% endif %}">{{ item.title }}{% if item.url == page.url %}<span class="dxmc-arrow">&nbsp;&#8592;</span>{% endif %}</a>
+          <div class="dxmc-nav-col col-4{% if item.url == page.url %} active{% endif %}">
+            <a href="{{ item.url }}" class="dxmc-nav">{{ item.title }}</a>
           </div>
           {% endfor %}      
         </div>

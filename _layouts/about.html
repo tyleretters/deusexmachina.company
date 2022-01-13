@@ -10,6 +10,7 @@ layout: abstract
       <table class="table mb-0">
         <tr>
           <th>CALL SIGN</th>
+          <th>TITLE</th>
           <th>ROLE</th>
         </tr>
         {% assign machinists_by_order = site.data.machinists | sort: "callsign" %}
@@ -17,6 +18,7 @@ layout: abstract
         <tr>
           <td id="{{ machinist.anchor }}">{{ machinist.callsign }}</td>
           <td>{{ machinist.title }}</td>
+          <td>{{ machinist.role }}</td>
         </tr>
         {% endfor %}
       </table>

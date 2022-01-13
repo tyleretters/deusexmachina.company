@@ -32,7 +32,7 @@ $ruleSize: 4px
 
 .sans-serif
   @extend .type-abstract
-  font-family: Arial, sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
 
 .monospace
   @extend .type-abstract
@@ -73,23 +73,20 @@ hr
 
 .tech
   @extend .serif
-  font-size: 4.8rem
+  color: $light
+  font-size: 2.4rem
+  font-weight: 400
+  letter-spacing: .1rem
   line-height: 2.6rem
-  letter-spacing: -0.2rem
-  color: transparent
-  position: relative
-  -webkit-text-stroke: 1px $danger
+  margin-top: 0
+  font-style: italic
 
-@media (max-width: 767px)
-  .tech
-    color: $danger
-    -webkit-text-stroke: 0
-    font-size: 2.4rem
-    font-weight: 400
-    letter-spacing: .1rem
-    line-height: 2.4rem
-    margin-top: 0
+.tech-smaller
+  font-size: 1.8rem
+  line-height: 2rem
 
+.scramble
+  overflow: visible
 
 /**
  * CORE

@@ -1,31 +1,39 @@
 - callsign: SCREAMING ORCHID
   title: Gonzo Machinist
+  role: Founder
   anchor: screaming-orchid
 
 - callsign: DREAMING LION
   title: Narrative Machinist
+  role: Copywriter
   anchor: dreaming-lion
 
 - callsign: SOFT JELLY
   title: Narrative Machinist
+  role: Copywriter
   anchor: soft-jelly
 
 - callsign: BEAMING MANTIS
   title: Cybernetic Machinist
-  anchor: valid-orca
+  role: Developer
+  anchor: beaming-mantis
 
 - callsign: SCRYING RAVEN
-  title: H3 Machinist
+  title: H3 Machinist 
+  role: Intrapreneur
   anchor: scrying-raven
 
 - callsign: MEWLING TIGER
-  title: Couture Machinist
+  title: Couture Machinist 
+  role: Fashionista
   anchor: scrying-raven
 
 - callsign: UNREMEMBERED OX
-  title: Crypto Machinist
+  title: Crypto Machinist 
+  role: Web3 Developer
   anchor: unremembered-ox
 
 - callsign: ONYX CICADA
   title: Light Machinist
+  role: Photographer
   anchor: onyx-cicada

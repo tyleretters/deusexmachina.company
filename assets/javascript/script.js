@@ -83,29 +83,28 @@ class TextScramble {
 /* thanks to https://commoner.earth for the the holy ciphers */
 /* https://github.com/tyleretters/apodcastfornow.com/blob/master/assets/script.js */
 const phrases = [
-  'the Anthropocene',
   'Community',
   'web3',
-  'the Impatient',
-  'Now',
-  'the Possible',
+  'Impatience',
+  'Possiblity',
   'Change',
   'ETH',
-  'seasteading',
+  'Kelp',
   '⁂',
-  'the Bold',
-  'crypto',
+  'Unfound',
+  'Crypto',
   'አሁን',
-  'the Hopeful',
-  'amor fati',
-  'the Lost Ones',
+  'Hopeful',
+  'Lost',
   'Cyborgs',
-  'Reclaimed Futures',
+  'Tao',
+  'Rebuilding',
   '䷜',
-  '现在',
-  'Exiting the Vampire Castle',
+  'Exiting the VC',
   '☥',
-  'Alienation'
+  'Alienation',
+  '404s',
+  '909s'
 ]
 
 if ($('.scramble').length) {

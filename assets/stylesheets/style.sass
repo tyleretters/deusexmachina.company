@@ -48,6 +48,17 @@ h1, h2
   text-indent: .05rem
   color: $faded
 
+h3
+  @extend .monospace
+  color: $danger
+  font-size: 3rem
+  line-height: 4rem
+
+@media (max-width: 991.98px)
+  h3
+    font-size: 2rem
+    line-height: 3rem
+
 p
   font-size: 1rem
   line-height: 1.2rem
@@ -72,18 +83,22 @@ hr
     border-bottom: transparent solid $ruleSize
 
 .tech
-  @extend .serif
-  color: $light
+  @extend .monospace
+  color: $accent
   font-size: 2.4rem
   font-weight: 400
   letter-spacing: .1rem
   line-height: 2.6rem
   margin-top: 0
-  font-style: italic
 
 .tech-smaller
   font-size: 1.8rem
-  line-height: 2rem
+  line-height: 2.2rem
+
+@media (max-width: 991.98px)
+  .tech,
+  .tech-smaller
+    font-size: 1.4rem
 
 .scramble
   overflow: visible

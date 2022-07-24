@@ -1,5 +1,5 @@
 baseurl: /
-url: https://deusexmachina.company
+url: https://tyleretters.github.io/deusexmachina.company
 permalink: pretty
 sort_by: year, month
 markdown: kramdown
